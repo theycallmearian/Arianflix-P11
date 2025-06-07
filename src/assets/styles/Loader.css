@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-l);
+  margin-top: var(--margin-l);
 }
 .spinner {
   width: 48px;

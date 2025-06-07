@@ -6,7 +6,7 @@ import Loader from '../common/Loader'
 import '../../assets/styles/Home.css'
 
 const suggestedWords = [
-  ' Busca aquí lo que quieras...',
+  '  Busca aquí lo que quieras...',
   ' Star Wars',
   ' Marvel',
   ' Goonies',

@@ -1,0 +1,104 @@
+.home-container {
+  background-color: var(--color-bg);
+  min-height: 100vh;
+  padding: var(--padding-xxl) var(--padding-m) var(--padding-l);
+}
+.home-header {
+  text-align: center;
+  margin-bottom: var(--margin-l);
+}
+.home-logo {
+  height: 10em;
+  width: auto;
+  margin-bottom: var(--margin-s);
+}
+.home-description {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--color-text);
+  margin-bottom: var(--margin-l);
+}
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--margin-m);
+  gap: var(--gap-s);
+}
+.search-input {
+  width: 60%;
+  max-width: 600px;
+  padding: var(--padding-m);
+  font-size: 1rem;
+  border: 2px solid var(--color-primary);
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  outline: none;
+}
+.search-button {
+  padding: var(--padding-m) var(--padding-l);
+  font-size: 1rem;
+  background-color: var(--color-primary);
+  color: #fff;
+  border: 2px solid var(--color-primary);
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.2s;
+}
+.search-button:hover {
+  background-color: #f6121d;
+}
+.error {
+  color: var(--color-primary);
+  margin: var(--margin-s) auto 0 auto;
+  text-align: center;
+  font-size: 0.95rem;
+}
+.no-results {
+  margin-top: var(--margin-l);
+  color: #bbb;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.row-container {
+  margin-top: var(--margin-l);
+}
+.row-title {
+  font-size: 1.5rem;
+  margin-left: 5%;
+  margin-bottom: var(--margin-s);
+  color: #fff;
+}
+.row-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: var(--padding-s);
+  padding-left: 5%;
+  gap: var(--gap-m);
+}
+.row-slider::-webkit-scrollbar {
+  height: 8px;
+}
+.row-slider::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+.row-slider::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}
+.row-slider > * {
+  flex: 0 0 auto;
+}
+@media (max-width: 600px) {
+  .search-input {
+    width: 80%;
+  }
+  .row-container {
+    margin-top: var(--margin-m);
+  }
+  .row-title {
+    font-size: 1.3rem;
+    margin-left: 3%;
+  }
+}

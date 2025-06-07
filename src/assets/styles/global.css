@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --color-bg: #141414;
+  --color-text: #e5e5e5;
+  --color-primary: #e50914;
+  --color-secondary: #333;
+  --color-card-bg: #1e1e1e;
+  --color-overlay: rgba(0, 0, 0, 0.6);
+
+  /* PADDING / MARGIN / GAP */
+  --padding-s: 0.5em;
+  --padding-m: 1em;
+  --padding-l: 2em;
+  --padding-xl: 3em;
+  --padding-xxl: 4em;
+  --padding-xxxl: 10em;
+
+  --margin-s: 0.5em;
+  --margin-m: 1em;
+  --margin-l: 2em;
+  --margin-xl: 3em;
+  --margin-xxl: 4em;
+  --margin-xxxl: 10em;
+
+  --gap-s: 0.5em;
+  --gap-m: 1em;
+  --gap-l: 2em;
+  --gap-xl: 3em;
+  --gap-xxl: 4em;
+  --gap-xxxl: 10em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 6px;
+  box-shadow: 0 0 6px var(--color-primary), 0 0 12px var(--color-primary),
+    0 0 18px var(--color-primary);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-primary) var(--color-secondary);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.main-content {
+  padding-top: 70px;
+}

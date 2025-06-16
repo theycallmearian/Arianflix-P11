@@ -101,4 +101,10 @@
     font-size: 1.3rem;
     margin-left: 3%;
   }
+
+  .home-logo {
+    height: 5em;
+    width: auto;
+    margin-bottom: var(--margin-s);
+  }
 }

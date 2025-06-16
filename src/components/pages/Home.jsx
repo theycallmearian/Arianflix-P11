@@ -77,7 +77,12 @@ export default function Home() {
         setTopRated(ratedData)
         setComedy(comedyData)
         setAction(actionData)
-      } catch (err) {}
+      } catch (err) {
+        console.error('Error al cargar categorías:', err)
+        setError(
+          'Hubo un problema al cargar las categorías. Intenta recargar la página.'
+        )
+      }
     }
     fetchCategories()
   }, [])
@@ -91,7 +96,7 @@ export default function Home() {
       const data = await fetchMovieList(searchTerm, 1)
       setMovies(data)
     } catch (err) {
-      setError(err.message)
+      setError('Hubo un error al buscar las películas. Intenta de nuevo.')
       setMovies([])
     } finally {
       setLoading(false)
@@ -107,7 +112,6 @@ export default function Home() {
           className='home-logo'
         />
         <p className='home-description'>
-          {' '}
           No somos Netlix, pero tenemos todo el cine del mundo
         </p>
       </div>
@@ -128,7 +132,7 @@ export default function Home() {
 
       {loading && <Loader />}
 
-      {error && <p className='error text-center'>Error: {error}</p>}
+      {error && <div className='error-message'>{error}</div>}
 
       {movies.length > 0 && !loading && !error && (
         <section className='row-container'>
